@@ -12,12 +12,13 @@
 /* ----- Nav grid ----- */
 .green {
 	.nav-grid__item {
-		background-color: $color-theme-green;
+		background-color: #3a3a3a;
 
 		&:hover,
 		&:active,
 		&:focus {
 			background-color: $color-theme-green;
+			border-color: #c0cd42;
 		}
 	}
 }

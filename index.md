@@ -4,8 +4,8 @@ layout: homepage
 keywords:
 
 # Hero section
-title: Project name
-description: Project description
+title: CVS - Dokumentation
+description: Umfangreiche Softwaredokumentation des Christophorus-Verwaltungssystems (CVS).
 buttons:
     - content: Button
       url: '#'

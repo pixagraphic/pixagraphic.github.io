@@ -1,0 +1,701 @@
+I"])<h1 id="grundlegende-funktionen">Grundlegende Funktionen</h1>
+<h2 id="automatisches-speichern">Automatisches Speichern</h2>
+<p>Im gesamten CVS gibt es keinen Button um Änderungen zu speichern. Alle Änderungen, die vorgenommen werden, werden automatisch und in Echtzeit auf dem Server gespeichert. Falls Sie eine ungültige Eingabe vornehmen, die nicht gespeichert werden kann bzw. soll, erhalten Sie immer eine entsprechende Fehlermeldung. Die einzige Ausnahme von dieser Regel stellt die sogenannte Inline-Bearbeitung dar (z.B. beim Bearbeiten von Schlagworten oder Klassen- und Lerngruppenbezeichnungen). Weitere Details dazu finden sich in den entsprechenden Abschnitten der Dokumentation.</p>
+
+<h2 id="paralleles-arbeiten">Paralleles Arbeiten</h2>
+<p>Alle Bereiche des CVS können von beliebig vielen NutzerInnen gleichzeitig betrachtet und bearbeitet werden. Dies ermöglicht das gleichzeitige Bearbeiten von beispielsweise Zeugnissen oder Förderdokumentationen, ohne dass eine gegenseitige Absprache nötig ist, oder ein Datensatz für die Bearbeitung gesperrt werden muss. Konflikte durch das gleichzeitige Bearbeiten des selben Textes werden dadurch verhindert, dass die Software ein Feld automatisch für alle BenutzerInnen sperrt, sobald eine Eingabe erkannt wird. Zusätzlich wird ein Hinweis eingeblendet, welche Person den Text gerade bearbeitet. Wird der Tippvorgang beendet, wird das Feld wieder für alle AnwenderInnen freigegeben.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/parallel_working.mp4"></video>
+    </p>
+</div>
+
+<p>Alle getätigten Änderungen werden in Echtzeit an alle anderen eingeloggten BenutzerInnen übertragen, so dass produktiv an einer gemeinsamen Datenbasis gearbeitet werden kann.</p>
+
+<h2 id="benutzer-berechtigungen">Benutzer-Berechtigungen</h2>
+<p>Nicht alle Funktionen des CVS stehen allen BenutzerInnen in gleichem Maße zur Verfügung. Bestimmte Bereiche oder Funktionen stehen nur NutzerInnen mit Administrator-Berechtigung zur Verfügung. Dies dient besonders dazu, jedem Anwender und jeder Anwenderin nur den Funktionsumfang zur Verfügung zu stellen, der in der täglichen Arbeit benötigt wird. So kann die Benutzeroberfläche übersichtlich gehalten werden ohne durch ungenutzte Funktionalität überladen zu werden. Die vorliegende Dokumentation behandelt alle existierenden Funktionen des CVS, es wird jedoch jeweils kenntlich gemacht, falls eine Funktion ausschließlich mit Administrator-Berechtigung zur Verfügung steht.</p>
+
+<h2 id="login">Login</h2>
+<p>Um im CVS arbeiten zu können, müssen Sie sich zunächst im System authentifizieren. Geben Sie dazu auf der <a href="https://cvs.christophor.ch" target="blank">Login-Seite</a> Ihre eMail Adresse (vorname.nachname@christophor.ch) und Ihr durch die Administration zugewiesenes Passwort ein. Bestätigen Sie die Eingabe mit Klick auf den “Einloggen” Button oder durch Drücken der Enter-Taste.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/login_flow.mp4"></video>
+    </p>
+</div>
+
+<p>Achten Sie bei der Eingabe darauf, das Passwort genau wie zugewiesen anzugeben. <strong>Groß- und Kleinschreibung</strong> müssen beachtet sowie <strong>Leerzeichen</strong> innerhalb oder am Anfang oder Ende des Passworts <strong>vermieden</strong> werden.</p>
+
+<div class="callout callout--success">
+<p><strong>Tipp</strong>
+Durch einen Klick auf das Augen-Symbol im Passwort-Eingabefeld, lässt sich das eingegebene Passwort ein- und ausblenden. Diese Funktion soll helfen Tippfehler und mehrmaliges Eingeben zu vermeiden.
+</p>
+</div>
+
+<h2 id="logout">Logout</h2>
+<p>Wenn Sie im System angemeldet sind, können Sie sich jederzeit ausloggen. Klicken Sie dazu am oberen rechten Bildrand auf das Benutzer-Symbol und dann auf den Menüpunkt “Ausloggen”.</p>
+
+<p><a href="/img/logout.jpg"><img src="/img/logout.jpg" alt="Ausloggen Menü" /></a></p>
+
+<p>In Klammern ist Ihre eMail-Adresse angegeben. Falls Sie über mehrere Accounts verfügen, können Sie so feststellen mit welchem Benutzer Sie gerade eingeloggt sind. Unter bestimmten umständen kommt es aus Sicherheitsgründen zu einem automatischen Ausloggen. Mehr dazu erfahren Sie unter dem Punkt <a href="/allgemeines/#sitzungen">Allgemeines -&gt; Sitzungen</a>.</p>
+
+<h2 id="menü">Menü</h2>
+<p>Am linken Bildschirmrand befindet sich das Menü. Der aktive Menüpunkt ist zur besseren Kenntlichmachung jeweils grün hinterlegt. Umfangreichere Punkte wie etwa “Personen” können durch Klicken aus- und eingeklappt werden, um weitere Unterpunkte sichtbar zu machen bzw. auszublenden.</p>
+
+<p>Für eine bessere Darstellung auf kleinen Bildschirmen und mobilen Endgeräten lässt sich das Menü durch Klicken auf das Menü-Icon (drei horizontale Balken) am linken oberen Bildschirmrand wahlweise ein- oder ausfahren. Sobald dem Browser-Fenster weniger als <strong>1200 Pixel</strong> Breite zur Verfügung stehen, wird das Menü automatisch eingefahren. Wird das Fenster wieder über diese Größe hinaus vergrößert, wird das Menü wiederum automatisch ausgefahren. Durch Klicken auf das Menü-Icon kann jedoch jederzeit unabhängig von der Breite des Fensters ein Aus- oder Einfahren erreicht werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/menu.mp4"></video>
+    </p>
+</div>
+
+<h2 id="tabs-und-navigation">Tabs und Navigation</h2>
+<p>Um das Arbeiten in unterschiedlichen Bereichen des CVS zu erleichtern, gibt es am oberen Bildschirmrand eine Tab-Leiste. Darin werden alle geöffneten Unterseiten angezeigt. Wird eine neue Seite geöffnet, erscheint automatisch ein neues Tab in der Leiste. Durch Klicken auf eines der Tabs kann somit ein schneller Wechsel zwischen beispielsweise zwei geöffneten Datensätzen erreicht werden. Durch Klicken auf das “x” am rechten Rand eines Tabs wird das jeweilige Tab geschlossen. Wird in einem geöffneten Tab beispielsweise eine Liste gefiltert oder eine Auswahl an Datensätzen getroffen, werden diese Einstellungen solange beibehalten, bis das Tab geschlossen wird.</p>
+
+<p>Unter der Tab-Leiste befindet sich die Navigations-Übersicht. Sie beinhaltet den Titel der aktuellen Seite, sowie eine Übersicht der Navigationsstruktur. Dadurch wird einerseits die Gliederung der Navigation deutlich, andererseits kann durch Klicken auf einen der Punkte der Navigationsstruktur schnell zu einem übergeordneten Punkt der aktuellen Seite navigiert werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/tabs.mp4"></video>
+    </p>
+</div>
+
+<h2 id="vollbild">Vollbild</h2>
+<p>Möchten Sie das CVS im Vollbild nutzen, können Sie dies durch Klicken auf die vier auseinander zeigenden Pfeile links neben dem Benutzer-Symbol am oberen rechten Rand des Browserfensters erreichen. Der Vollbild-Modus kann entweder durch erneutes Klicken auf das Icon oder das Betätigen der Escape-Taste auf der Tastatur verlassen werden.</p>
+
+<h1 id="eingabe-typen">Eingabe-Typen</h1>
+<p>Innerhalb des CVS gibt es unterschiedliche Typen von Eingabemöglichkeiten, die sich danach richten welche Art von Daten gespeichert werden soll. Folgende Typen werden unterschieden:</p>
+
+<h2 id="freitext">Freitext</h2>
+<p>Am häufigsten werden Freitextfelder für die Dateneingabe genutzt. In diesen Feldern kann beliebiger Text erfasst werden, ähnlich wie in einem Text-Editor. Auch Absätze können durch betätigen der Enter-Taste eingefügt und gespeichert werden. Dies kann beispielsweise bei der Eingabe längerer Text bei Förderdokumentationen oder Zeugnissen sinnvoll sein.</p>
+
+<p>Es gilt zu beachten, dass je nach Eingabefeld unterschiedliche Vorgaben für die erlaubten Zeichen bestehen. So existieren bei der Eingabe von Zeugnis-Texten etwa keine Restriktionen wohingegen in eMail-Adressen-Feldern keine Absätze oder Sonderzeichen erlaubt sind, die in eMail Adressen nicht vorgesehen sind. Falls Sie eine Eingabe Tätigen, wird die Software Ihnen in der entsprechenden Fehlermeldung mitteilen, aus welchem Grund die Eingabe ungültig ist und deshalb nicht gespeichert wurde.</p>
+
+<p>Alle Freitextfelder verfügen über die Funktion, dass sie automatisch für andere NutzerInnen gesperrt werden, falls Sie gerade eine Eingabe vornehmen. Dadurch können konkurrierende Eingaben in das selbe Textfeld und das gegenseitige Überschreiben von Daten verhindert werden. Mehr zu diesem Thema erfahren Sie unter dem Punkt <a href="/funktionen/#paralleles-arbeiten">Grundlegende Funktionen -&gt; Paralleles Arbeiten</a></p>
+<h2 id="datum">Datum</h2>
+<p>In Datumsfeldern können Sie entweder direkt ein Datum im Format TT.MM.JJJJ eingeben oder durch Klicken in das Datumsfeld einen Kalender öffnen um den gewünschten Tag auszuwählen.</p>
+
+<p>Zum Löschen eines Datums klicken Sie auf das “x” am rechten Rand des Feldes (erscheint nur, falls bereits ein Datum eingegeben wurde).</p>
+<h2 id="radio-buttons">Radio-Buttons</h2>
+<p>Bei sogenannten Radio-Buttons handelt es sich um Kreise die durch Klicken eine Anwahl der gewünschten Option erlauben. Radio-Buttons gestatten grundsätzlich nur die Auswahl genau einer Option, es handelt sich also um eine “Entweder-oder-Auswahl”. Die Auswahl eines Radio-Buttons lässt sich nicht löschen, es ist lediglich möglich eine andere Option zu wählen.</p>
+
+<p>Beispiel:
+<a href="/img/radio.jpg"><img src="/img/radio.jpg" alt="Radio-Buttons" /></a></p>
+<h2 id="selektion">Selektion</h2>
+<p>Bei einem Selektionsfeld handelt es sich um ein Dropdown-Menü, das eine Auswahl an unterschiedlichen Optionen bietet aus denen eine ausgewählt werden kann. Da es vorkommen kann, dass eine erhebliche Anzahl an Optionen zur Auswahl steht, kann durch eine Texteingabe im Feld ein Eingrenzen der möglichen Optionen vorgenommen werden. Möchten Sie beispielsweise aus einem Dropdown mit allen Schülern eine bestimmte Person auswählen, klicken Sie in das Feld und geben Sie wahlweise den Vor- oder Nachnamen der gesuchten Person ein. Die Auswahl im Dropdown-Menü passt sich Ihrer Eingabe an und präsentiert nur Personen, die dem eingegeben Text entsprechen.</p>
+
+<p>Zum Löschen einer Selektion, klicken Sie auf das “x” am rechten Rand des Feldes.</p>
+<h2 id="mehrfach-selektion">Mehrfach-Selektion</h2>
+<p>Die Mehrfach-Selektion funktioniert grundsätzlich analog zur einfachen Selektion. Es können aber beliebig viele Optionen aus dem Dropdown durch Klicken ausgewählt werden. Die ist beispielsweise bei der Eingabe einer Person sinnvoll, die über mehrerer Staatsbürgerschaften verfügt. Die ausgewählten Optionen erscheinen als kleine Labels im Eingabefeld.</p>
+
+<p>Durch einen Klick auf das “x” können Optionen einzeln deselektiert werden.</p>
+
+<h1 id="dashboard">Dashboard</h1>
+<p>Nach dem Login starten Sie zunächst immer auf der Dashboard-Seite. Momentan finde Sie dort lediglich einen Willkommensgruß sowie das Logo der Schule. In Zukunft ist geplant, das Dashboard um weitere Funktionalitäten zu erweitern.</p>
+
+<h1 id="personen">Personen</h1>
+
+<h2 id="liste">Liste</h2>
+
+<p>In der Personen-Liste werden alle im System erfassten Personen-Datensätze angezeigt. Es ist dabei unerheblich, ob es sich um ehemalige MitarbeiterInnen/SchülerInnen handelt oder um Personen, die sich aktuell noch an der Schule befinden. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend alphabetisch nach Nachnamen sortiert.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der Personen angezeigt, die den aktuellen Filterkriterien entsprechen, wurden keine Filter angewendet, repräsentiert dies also die Gesamtzahl der im System vorhandenen Personen. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Personen auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/people_list.mp4"></video>
+
+    Funktionsumfang der Personen-Liste
+    </p>
+</div>
+
+<h5 id="person-anlegen">Person anlegen</h5>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass das Anlegen von Personen-Datensätzen Administrator-Berechtigungen erfordert.
+</p>
+</div>
+
+<p>Um einen neuen Personen-Datensatz anzulegen, klicken Sie auf den Button “Neue Person hinzufügen”, der sich mittig über der Tabelle befindet. Geben Sie einen Vor- und einen Nachnamen ein und klicken Sie anschließend auf “Anlegen”. Die neue Person erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint. Um weitere Daten eingeben zu können, suchen Sie die gerade angelegte Person in der Tabelle und navigieren Sie durch einen Doppelklick auf die Zeile zur Detailansicht der Person.</p>
+
+<p><strong>Beachten Sie</strong>, dass die neu angelegte Person unter Umständen nicht in der Tabelle erscheint, falls sie nicht den von Ihnen vorgegebenen  Filterkriterien entspricht.</p>
+
+<h5 id="funktionen-von-personen">Funktionen von Personen</h5>
+
+<p>Alle gespeicherten Personen ist eine bestimmte Funktion zugeordnet. Dabei gibt es folgende Möglichkeiten:</p>
+
+<ul>
+<li>Schüler/in</li>
+<li>Mitarbeiter/in</li>
+<li>Erziehungsberechtigte/r</li>
+<li>Extern (z.B. Kotaktpersonen beim SPD o.Ä.)</li>
+</ul>
+
+<p>Die Funktion jeder Person wird direkt in der ersten Tabellen-Spalte angezeigt. Dort findet sich zusätzlich die Angabe der Lerngruppe (falls es sich um einen SchülerInnen-Datensatz handelt und eine Lerngruppe zugewiesen wurde) sowie das Austrittsdatum, falls dieses angegeben wurde.</p>
+
+<h5 id="selektieren-von-datensätzen">Selektieren von Datensätzen</h5>
+
+<p>Mit einem einfachen Klick auf eine Zeile der Tabelle wird dieser Datensatz selektiert. Dies wird durch einen Haken in einer grünen Box am Beginn der Zeile kenntlich gemacht. Ein erneutes Klicken auf die Zeile hebt die Auswahl wieder auf. Durch Klicken auf die oberste kleine Box ganz links in der Kopfzeile der Tabelle, können alle Datensätze <strong>der aktuellen Seite</strong> aus- bzw. abgewählt werden. Beachten Sie, dass solange die oberste Box grün mit einem weißen “-“ darin erscheint, noch Datensätze ausgewählt sind. Diese können sich auch auf eine der anderen Seiten der Tabelle als der aktuellen befinden.</p>
+
+<p>Die Auswahl von Datensätzen kann genutzt werden um daraus Etiketten zu drucken oder Briefe zu adressieren. Mehr dazu finden Sie im betreffenden Abschnitt der Dokumentation. (<a href="/funktionen/#briefe">Briefe</a>)</p>
+
+<h5 id="bearbeiten-und-einsehen">Bearbeiten und Einsehen</h5>
+
+<p>Möchten Sie einen bestimmten Datensatz betrachten bzw. bearbeiten, gelangen Sie mit einem Doppelklick auf die entsprechende Zeile der Tabelle in die Detailansicht der Person. Hier können alle erfassten Daten betrachtet und bearbeitet werden.</p>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass das Bearbeiten von Personen-Datensätzen Administrator-Berechtigungen erfordert. Ein Betrachten der Daten und das Anlegen neuer Förderdokumentationen ist hingegen allen NutzerInnen möglich.
+</p>
+</div>
+
+<p>Je nach ausgewählter Funktion der betrachteten Person, unterscheiden sich die angezeigten Daten. So dass beispielsweise für SchülerInnen ein Bürgerort oder eine zuweisende Stelle angegeben werden kann wohingegen für MitarbeiterInnen die Möglichkeit der Angaben eines Berufes existiert.</p>
+
+<p>Handelt es sich um einen SchülerInnen-Datensatz finden Sie am Ende der Detailansicht eine Übersicht der erfassten Förderdokumentationen und Zeugnissen nach Schuljahr. Durch Klicken auf ein Jahr gelangen Sie direkt zum entsprechenden Datensatz. Durch Klicken auf “Neue Förderdokumentation hinzufügen” haben Sie außerdem die Möglichkeit eine neue Dokumentation anzulegen. Es bleibt Ihnen überlassen, ob Sie auf Förderdokumentationen zugreifen bzw. diese Anlegen indem Sie auf die Detailansicht einer Person zugreifen oder ob Sie dafür direkt den Menüpunkt <a href="/funktionen/#förderdokumentationen">Personen -&gt; Förderdokumentationen</a> nutzen. Bei beiden Möglichkeiten handelt es sich um die selbe Datenbasis. Das Gleiche gilt für die Erstellung neuer Zeugnisse.</p>
+
+<p>Um die Eingabe von Adressen zu erleichtern, existiert eine <strong>Adressübernahme</strong> Funktion. Ein Personendatensatz kann mit anderen Personen verknüpft werden, beispielsweise durch die Auswahl von “Erziehungsberechtigten” im Datensatz eines Kindes oder der Auswahl von Kindern in einem Datensatz eines Erziehungsberechtigten. Wurde eine solche Verknüpfung erstellt, lässt sich durch Klicken auf das Verknüpfungsicon unter der Überschrift “Anschrift” die Adressübernahme starten. Im dadurch geöffneten Fenster werden alle Adressen von verknüpften Personen angezeigt. Mit einem Klick auf “übernehmen” wird die Adresse des gewünschten Datensatzes in den aktuellen Datensatz übernommen. Voraussetzung dafür ist natürlich, dass im verknüpften Datensatz bereits eine Adresse hinterlegt wurde.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/address_sync.mp4"></video>
+    </p>
+</div>
+
+<h5 id="sortieren">Sortieren</h5>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.</p>
+
+<p>Zu beachten ist, dass sich die Ordnung der Adress-Spalte an der Postleitzahl orientiert.</p>
+
+<h5 id="filtern-und-durchsuchen">Filtern und Durchsuchen</h5>
+
+<p>Um möglichst schnell den oder die gesuchten Datensätze zu erhalten, haben Sie die Möglichkeit die Tabelle mittels Volltextsuche zu durchsuchen bzw. die Auswahl an Datensätzen durch Filterkriterien zu reduzieren. Alle verfügbaren Optionen dazu finden Sie direkt über der Tabelle. Haben Sie Filterkriterien aktiviert, die die Anzahl der angezeigten Datensätze reduzieren, wird dies durch einen gelben Warnhinweis “Liste ist durch Filter reduziert” angezeigt.</p>
+
+<p><strong>Beachten Sie</strong> das Zahnrad-Icon auf der linken Seite. Durch keinen Klick darauf öffnet sich ein Dropdown-Menü in dem Sie weitere Filteroptionen einblenden oder überflüssige Optionen ausblenden können.</p>
+
+<p>Mit der Volltextsuche, können Sie alle Datensätze nach beliebigem Freitext durchsuchen. Ein praktisches Beispiel wäre etwa die Eingabe eines Nachnamens, um alle Mitglieder einer Familie angezeigt zu bekommen. Zusätzlich zum Namen werden aber auch das Adressfeld und viele weitere Felder, die nicht in der Tabelle angezeigt werden, durchsucht (wie z.B. das Notiz-Feld).</p>
+
+<p>Die weiteren Filteroptionen sind selbsterklärend. Wählen Sie beispielsweise unter “Funktion” die Option “Schüler/innen”, werden ausschließliche SchülerInnen angezeigt und alle Erziehungsberechtigten, MitarbeiterInnen und Externen werden nicht gelistet. Nutzen Sie mehrere Filterkriterien gleichzeitig, werden diese durch eine Und-Verknüpfung in Beziehung gebracht. Dies bedeutet, dass in folgendem Beispiel:</p>
+
+<p><a href="/img/people_filter.jpg"><img src="/img/people_filter.jpg" alt="Filteroptionen" /></a></p>
+
+<p>alle Personen angezeigt werden, auf die Folgendes zutrifft: enthalten Text “Wagner” <strong>und</strong> sind der Funktion “Schüler/in” zugeordnet <strong>und</strong> sind der “Lerngruppe 1” zugeordnet <strong>und</strong> sind “aktiv” (= kein Austrittsdatum gesetzt).</p>
+
+<p>Treffen Sie innerhalb eines Filterkriteriums eine Mehrfachauswahl, werden diese in eine Oder-Beziehung zueinander gebracht. Selektieren Sie also im Beispiel oben zusätzlich zur Lerngruppe 1 die Lerngruppe 2, werden Datensätze angezeigt auf die alle anderen Kriterien zutreffen und die “Lerngruppe 1” <strong>oder</strong> “Lerngruppe 2” zugeordnet wurden. <strong>Eine Ausnahme</strong> bilden dabei die Schlagworte. Wenn Sie mehrere Schlagworte auswählen, werden nur Datensätze angezeigt, denen <strong>alle</strong> selektieren Schlagworte zugeordnet sind.</p>
+
+<div class="callout callout--success">
+<p><strong>Tipp</strong>
+Wurde ein Kind einer Lerngruppe oder einer Klasse zugeordnet, wirkt diese Eigenschaft transitiv auf die verknüpften Erziehungsberechtigten. Das bedeutet, dass Sie durch den Filter "Lerngruppe 1" sowohl die SchülerInnen als auch die zugeordneten Eltern der Lerngruppe 1 präsentiert bekommen. Möchten Sie ausschließlich SchülerInnen oder Erziehungsberechtigte angezeigt bekommen, verwenden Sie zusätzlich das Filterkriterium "Funktion".
+</p>
+</div>
+
+<h2 id="förderdokumentationen">Förderdokumentationen</h2>
+
+<h5 id="dokumentationsliste">Dokumentationsliste</h5>
+
+<p>In der Liste werden alle im System erfassten Förderdokumentationen angezeigt. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend nach der letzten Bearbeitung sortiert.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der Dokumentationen angezeigt, die der aktuellen Volltextsuche entsprechen, wurden keine Suche angewendet, repräsentiert dies also die Gesamtzahl der im System vorhandenen Förderdokumentationen. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Datensätze auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/documentation_list.mp4"></video>
+    </p>
+</div>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.</p>
+
+<h5 id="förderdokumentation-anlegen">Förderdokumentation anlegen</h5>
+
+<p>Um eine neue Förderdokumentation anzulegen, klicken Sie auf den Button “Neue Förderdokumentation hinzufügen”, der sich mittig über der Tabelle befindet. Wählen Sie eine Person und den Zeitraum, den die Dokumentation erfassen soll aus und klicken Sie anschließend auf “Anlegen”. Der neue Datensatz erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint. Um weitere Daten eingeben zu können, suchen Sie die gerade angelegte Förderdokumentation in der Tabelle und navigieren Sie durch einen Doppelklick auf die Zeile zur Detailansicht.</p>
+
+<div class="callout callout--warning">
+    <p><strong class="video-collapse" style="cursor:pointer;">Keine doppelten Dokumentationen</strong>
+    Pro SchülerIn und Zeitraum kann jeweils nur eine einzige Förderdokumentation angelegt werden. Falls Sie versuchen eine Dokumentation anzulegen, die bereits existiert, wird die Software Sie durch eine Fehlermeldung darauf aufmerksam machen und die Erstellung abbrechen.
+    </p>
+</div>
+
+<p><strong>Beachten Sie</strong>, dass die neu angelegte Förderdokumentation unter Umständen nicht in der Tabelle erscheint, falls sie nicht der von Ihnen vorgegebenen Volltextsuche entspricht.</p>
+
+<p>Falls Sie dies wünschen, haben Sie auch die Möglichkeit eine neue Förderdokumentation direkt in der Detailansicht des betreffenden Schülers oder der betreffenden Schülerin vorzunehmen. Mehr dazu erfahren Sie unter dem Punkt <a href="/funktionen/#bearbeiten-und-einsehen">Personen -&gt; Liste -&gt; Bearbeiten und Einsehen</a>.</p>
+
+<h5 id="einsehen-und-bearbeiten">Einsehen und Bearbeiten</h5>
+
+<p>Durch einen Doppelklick auf die Zeile in der Listen-Ansicht gelangen Sie zur Detailansicht der jeweiligen Förderdokumentation. Wurde die angewählte Dokumentation bereits finalisiert, haben Sie ausschließlich die Möglichkeit einen PDF-Export vorzunehmen, befindet sich die Dokumentation noch in Bearbeitung, können Sie Veränderungen der bestehenden Daten bzw. neue Einträge vornehmen.</p>
+
+<p>Für eine übersichtlichere Gliederung wurden die verschiedenen Teilbereiche in ein- und ausklappbare Boxen unterteilt, die beim Öffnen der Detailansicht standardmäßig alle eingeklappt sind. Durch Klicken auf die Titel-Zeile der jeweiligen Box, kann diese ausgeklappt werden, um die zugehörigen Inhaltsfelder bearbeiten zu können. Ein erneutes Klicken, klappt die Box wieder ein.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/documentation_detail.mp4"></video>
+    </p>
+</div>
+
+<p>Verschiedene Elemente wie etwa Lernstandserfassungen oder Förderplanungen können je nach Bedarf durch einen Klick auf den entsprechenden grünen “hinzufügen” Button erstellt und dann bearbeitet werden. Ebenso ist es möglich, nicht mehr benötigte Elemente durch einen Klick auf das rote Papierkorb-Icon zu löschen.
+<strong>Beachten Sie:</strong> Wenn Sie neue Förderplanungen innerhalb der Dokumentation hinzufügen, werden diese wiederum als eingeklappte Box dargestellt. Klicken Sie wiederum auf die Titelzeile (z.B. 1. Förderplanung) um die Box aus- oder einzuklappen.</p>
+
+<h5 id="finalisieren-und-exportieren">Finalisieren und Exportieren</h5>
+
+<p>Während Sie die Bearbeitung einer Förderdokumentation vornehmen, können Sie sich jederzeit die Vorschau der finalen PDF anzeigen lassen. Klicken Sie dazu in der Detailansicht am oberen Bildrand auf den Button “Förderdokumentation finalisieren” und dann auf den Button “Vorschau herunterladen”. Anschließend wird eine PDF auf Grundlage der aktuell erfassten Daten generiert und zum Herunterladen bereitgestellt. Beachten Sie, dass jede Seite dieser PDF-Datei mit einem Hinweis versehen ist, dass es sich lediglich um eine Vorschau handelt.</p>
+
+<p>Wenn die Bearbeitung abgeschlossen ist und die Förderdokumentation final für den Druck exportiert werden soll, klicken Sie auf den Button “Förderdokumentation finalisieren” und dann auf “Finalisieren”. Durch Bestätigen der sich öffnenden Hinweisbox, wird die Bearbeitung des Datensatzes gesperrt und die finale PDF-Version zum Herunterladen präsentiert. Diese PDF verfügt nun nicht mehr über den “Vorschau”-Hinweis auf jeder Seite.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/documentation_export.mp4"></video>
+    </p>
+</div>
+
+<div class="callout callout--warning">
+    <p><strong class="video-collapse" style="cursor:pointer;">Keine weitere Bearbeitung möglich</strong>
+    Wurde ein Datensatz finalisiert, ist keine weitere Bearbeitung möglich. Lediglich ein Export der PDF-Datei, die den Stand zum Zeitpunkt der Finalisierung widerspiegelt, ist möglich.
+
+    Sollte es versehentlich zu einer Finalisierung gekommen und eine weitere Bearbeitung nötig sein, können Sie die technische Administration kontaktieren. In diesem Fall kann auch ein finalisiertes Dokument noch einmal zur Bearbeitung geöffnet werden.
+    </p>
+</div>
+
+<h2 id="zeugnisse">Zeugnisse</h2>
+
+<h5 id="zeugnisliste">Zeugnisliste</h5>
+
+<p>In der Liste werden alle im System erfassten Zeugnisse angezeigt. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend nach der letzten Bearbeitung sortiert.</p>
+
+<p>Grundsätzlich wird zwischen den Zeugnistypen <strong>Primarstufe (Klassen 1-6)</strong> und <strong>Sekundarstufe (Klassen 7-10)</strong> unterschieden. Primarstufenzeugnisse bestehen ausschließliche aus Freitext-Eingabefeldern wohingegen Sekundarstufenzeugnisse vorrangig aus Single-Choice Auswahlfeldern bestehen, die bei Bedarf durch Freitexteingaben ergänzt werden können.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der Zeugnisse angezeigt, die der aktuellen Volltextsuche entsprechen, wurden keine Suche angewendet, repräsentiert dies also die Gesamtzahl der im System vorhandenen Datensätze. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Datensätze auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/report_list.mp4"></video>
+    </p>
+</div>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.</p>
+
+<h5 id="zeugnis-anlegen">Zeugnis anlegen</h5>
+
+<p>Um ein neues Zeugnis anzulegen, klicken Sie auf den Button “Neues Zeugnis hinzufügen”, der sich mittig über der Tabelle befindet. Wählen Sie den Zeugnistyp, eine Person und den Zeitraum, den das Zeugnis umfassen soll aus und klicken Sie anschließend auf “Anlegen”. Der neue Datensatz erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint. Um weitere Daten eingeben zu können, suchen Sie das gerade angelegte Zeugnis in der Tabelle und navigieren Sie durch einen Doppelklick auf die Zeile zur Detailansicht.</p>
+
+<div class="callout callout--warning">
+    <p><strong class="video-collapse" style="cursor:pointer;">Keine doppelten Zeugnisse</strong>
+    Pro Zeugnistyp, SchülerIn und Zeitraum kann jeweils nur ein einziges Zeugnis angelegt werden. Falls Sie versuchen ein Zeugnis anzulegen, das bereits existiert, wird die Software Sie durch eine Fehlermeldung darauf aufmerksam machen und die Erstellung abbrechen.
+    </p>
+</div>
+
+<p><strong>Beachten Sie</strong>, dass das neu angelegte Zeugnis unter Umständen nicht in der Tabelle erscheint, falls es nicht der von Ihnen vorgegebenen Volltextsuche entspricht.</p>
+
+<p>Falls Sie dies wünschen, haben Sie auch die Möglichkeit ein neues Zeugnis direkt in der Detailansicht des betreffenden Schülers oder der betreffenden Schülerin vorzunehmen. Mehr dazu erfahren Sie unter dem Punkt <a href="/funktionen/#bearbeiten-und-einsehen">Personen -&gt; Liste -&gt; Bearbeiten und Einsehen</a>.</p>
+
+<h5 id="einsehen-und-bearbeiten-1">Einsehen und Bearbeiten</h5>
+
+<p>Durch einen Doppelklick auf die Zeile in der Listen-Ansicht gelangen Sie zur Detailansicht des jeweiligen Zeugnisses. Wurde das angewählte Zeugnis bereits finalisiert, haben Sie ausschließlich die Möglichkeit einen PDF-Export vorzunehmen, befindet sich das Zeugnis noch in Bearbeitung, können Sie Veränderungen der bestehenden Daten bzw. neue Einträge vornehmen.</p>
+
+<p>Für eine übersichtlichere Gliederung wurden die verschiedenen Teilbereiche in ein- und ausklappbare Boxen unterteilt, die beim Öffnen der Detailansicht standardmäßig alle eingeklappt sind. Durch Klicken auf die Titel-Zeile der jeweiligen Box, kann diese ausgeklappt werden, um die zugehörigen Inhaltsfelder bearbeiten zu können. Ein erneutes Klicken, klappt die Box wieder ein.</p>
+
+<p>Es werden jeweils alle möglichen Bewertungsdimensionen angezeigt. Falls einzelne Bereiche nicht in ein Zeugnis einfließen sollen, lassen Sie die Felder einfach leer. Beim Export werden nur die Bereiche berücksichtigt, in denen eine Eingabe getätigt wurde.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/report_detail.mp4"></video>
+    </p>
+</div>
+
+<p><strong>Primarstufenzeugnisse</strong></p>
+
+<p>Das Primarstufenzeugnis besteht ausschließlich aus Freitextfeldern. Darin können beliebige Text und auch Absätze erfasst werden, die Handhabung entspricht der eines Texteditors. Weitere Formatierungen wie etwa Fettdruck oder Schriftgröße können nicht vorgenommen werden. Dies dient dazu am Ende ein möglichst einheitliches Bild der Zeugnisse beim Export erreichen zu können.</p>
+
+<p><strong>Sekundarstufenzeugnisse</strong></p>
+
+<p>Das Sekundarstufenzeugnis besteht hauptsächlich aus Single-Choice Auswahlfeldern. Das bedeutet, dass Sie pro Bewertungsdimension die Möglichkeit haben genau eine Bewertung per Klick auf den entsprechenden Radio-Button vorzunehmen. Bewegen Sie den Mauszeiger über die verschiedenen Buttons, um eine Anzeige zu erhalten, um welche Bewertung es sich handelt. Wurde ein Button angewählt, erscheint unter der Bewertungsdimension ein Kasten, der die vorgenommene Bewertung widerspiegelt. Durch einen Klick auf das “x” rechts in der Box, lässt sich die Bewertung löschen. Ergänzend werden Freitextfelder angeboten, um detailiertere Angaben zu einzelnen Bereichen vornehmen zu können.</p>
+
+<p>Da standardmäßig alle Bewertungsbereiche eingeklappt sind, kann es schwierig werden, einen Überblick zu erhalten, welche Bereiche bereits bearbeitet wurden. Aus diesem Grund wird durch einen grauen Haken vor der Überschrift verdeutlicht, dass in diesem Bereich bereits Bewertungen vorgenommen wurden. Der Haken erscheint, sobald eine Bewertung vorgenommen wurde, er ist also kein Beleg darüber, dass für einen Bereich bereits <strong>alle</strong> Bewertungen vorgenommen wurden.</p>
+
+<h5 id="finalisieren-und-exportieren-1">Finalisieren und Exportieren</h5>
+
+<p>Während Sie die Bearbeitung eines Zeugnisses vornehmen, können Sie sich jederzeit die Vorschau der finalen PDF anzeigen lassen. Klicken Sie dazu in der Detailansicht am oberen Bildrand auf den Button “Zeugnis finalisieren” und dann auf den Button “Vorschau herunterladen”. Anschließend wird eine PDF auf Grundlage der aktuell erfassten Daten generiert und zum Herunterladen bereitgestellt. Beachten Sie, dass jede Seite dieser PDF-Datei mit einem Hinweis versehen ist, dass es sich lediglich um eine Vorschau handelt.</p>
+
+<p>Wenn die Bearbeitung abgeschlossen ist und das Zeugnis final für den Druck exportiert werden soll, klicken Sie auf den Button “Zeugnis finalisieren” und dann auf “Finalisieren”. Durch Bestätigen der sich öffnenden Hinweisbox, wird die Bearbeitung des Datensatzes gesperrt und die finale PDF-Version zum Herunterladen präsentiert. Diese PDF verfügt nun nicht mehr über den “Vorschau”-Hinweis auf jeder Seite.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/report_export.mp4"></video>
+    </p>
+</div>
+
+<div class="callout callout--warning">
+    <p><strong class="video-collapse" style="cursor:pointer;">Keine weitere Bearbeitung möglich</strong>
+    Wurde ein Datensatz finalisiert, ist keine weitere Bearbeitung möglich. Lediglich ein Export der PDF-Datei, die den Stand zum Zeitpunkt der Finalisierung widerspiegelt, ist möglich.
+
+    Sollte es versehentlich zu einer Finalisierung gekommen und eine weitere Bearbeitung nötig sein, können Sie die technische Administration kontaktieren. In diesem Fall kann auch ein finalisiertes Dokument noch einmal zur Bearbeitung geöffnet werden.
+    </p>
+</div>
+
+<h2 id="schulbescheinigungen">Schulbescheinigungen</h2>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass der Export von Schulbescheinigungen Administrator-Berechtigungen erfordert.
+</p>
+</div>
+
+<h5 id="exportieren">Exportieren</h5>
+
+<p>Um eine Schulbescheinigung zu exportieren, wählen Sie die gewünschte Person aus dem Drodown, sowie das gewünschte Jahr der Bescheinigung aus. Der Text der Schulbescheinigung wird generiert und in einem editierbaren Textfeld angezeigt. Sie haben hier die Möglichkeit eine Veränderung des Textes vorzunehmen. Dies kann sinnvoll sein, wenn beispielsweise ein Export für einen zurückliegenden Zeitraum vorgenommen werden soll. Das CVS wird standardmäßig die aktuell gespeicherte Klasse der ausgewählten Person in den Export übernehmen. Möchten Sie einen Export für einen Zeitraum vornehmen, der z.B. 2 Jahre in der Vergangenheit liegt, muss auch die damalige Klasse angegeben werden. Da dem CVS diese Information nicht vorliegt, können Sie diese manuell im Textfeld eintragen.</p>
+
+<p>Klicken Sie im Anschluss auf den Button “PDF-Export” um die Bescheinigung zu exportieren und herunterzuladen.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/enrollment_export.mp4"></video>
+    </p>
+</div>
+
+<h5 id="verifizieren">Verifizieren</h5>
+
+<p>Am Ende jeder exportieren Bescheinigung befindet sich ein Link und eine Verifikationsnummer. Durch das Aufrufen der verlinkten Seite, können die in der Bescheinigung aufgeführten Daten verifiziert werden. Dies funktioniert dadurch, dass jede exportierte Bescheinigung mit einer eindeutigen Verifikationsnummer im CVS hinterlegt ist. Bei Aufruf der entsprechenden Seite, die sich auf dem CVS-Server befindet, werden die entsprechenden Informationen direkt aus dem System geladen und angezeigt. Sollten Informationen in der PDF-Datei nach dem Export verändert worden sein, stimmen diese nun nicht mehr mit dem verifizierten Stand auf den Servern überein, was durch einen Abgleich der Daten festgestellt werden kann.</p>
+
+<h2 id="institutionen">Institutionen</h2>
+
+<p>In der Institutionen-Liste werden alle im System erfassten Institutionen angezeigt. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend alphabetisch nach Institutionsname sortiert.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der Institutionen angezeigt, die der aktuellen Volltextsuche entsprechen, wurden keine Suche angewendet, repräsentiert dies also die Gesamtzahl der im System vorhandenen Datensätze. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Institutionen auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/institution_list.mp4"></video>
+    </p>
+</div>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.
+Zu beachten ist, dass sich die Ordnung der Adress-Spalte an der Postleitzahl orientiert.</p>
+
+<p>Der Vorteil einer Zuordnung von Personen zu Institutionen besteht in einer <strong>automatischen Adressübernahme</strong>. Werden beispielsweise mehrere Personendatensätze von PsychologInnen des Schulpsychologischen-Dienstes angelegt und mit dem SPD-Institutionsdatensatz verknüpft, muss für diese Personen keine Adresse im Personen-Datensatz angegeben werden. Das CVS wird automatisch für alle Personen ohne eigene Adresse prüfen, ob eine verknüpfte Institution existiert und deren Adresse in diesem Fall als Adresse der Person nutzen. Dies kann z.B. beim Export von Etiketten Anwendung finden. Für den Fall, dass sowohl einen Verknüpfung mit einer Institution als auch eine eigene Adresse im Personendatensatz angegeben ist, erhält die eigene Adresse der Person die höhere Priorität und die Institutionsadresse wird nicht berücksichtigt.</p>
+
+<h5 id="neue-institution-anlegen">Neue Institution anlegen</h5>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass das Anlegen von Institutionen Administrator-Berechtigungen erfordert.
+</p>
+</div>
+
+<p>Um eine neue Institution anzulegen, klicken Sie auf den Button “Neue Institution hinzufügen”, der sich mittig über der Tabelle befindet. Geben Sie einen Namen ein und klicken Sie anschließend auf “Anlegen”. Die neue Institution erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint. Um weitere Daten eingeben zu können, suchen Sie die gerade angelegte Institution in der Tabelle und navigieren Sie durch einen Doppelklick auf die Zeile zur Detailansicht des Datensatzes.</p>
+
+<p><strong>Beachten Sie</strong>, dass die neu angelegte Institution unter Umständen nicht in der Tabelle erscheint, falls sie nicht der von Ihnen vorgegebenen Volltextsuche entspricht.</p>
+
+<h5 id="einsehen-und-bearbeiten-2">Einsehen und Bearbeiten</h5>
+
+<p>Möchten Sie einen bestimmten Datensatz betrachten bzw. bearbeiten, gelangen Sie mit einem Doppelklick auf die entsprechende Zeile der Tabelle in die Detailansicht der Institution. Hier können alle erfassten Daten betrachtet und bearbeitet werden.</p>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass das Bearbeiten von Institutionen Administrator-Berechtigungen erfordert. Ein Betrachten der Daten ist hingegen allen NutzerInnen möglich.
+</p>
+</div>
+
+<p>Hauptsächlich dienen Institutionen-Datensätze dazu, die Adresse und weitere Kontaktmöglichkeiten einer Institution zu erfassen und die Institution anschließend mit Personen-Datensätze zu verknüpfen. Um diese Verknüpfung herzustellen, wählen Sie die gewünschten Personen im Feld “zugeordnete Personen” aus. In diesem Dropdown werden alle im System erfassten Personen mit der Funktion <strong>Extern</strong> aufgeführt.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/institution_link.mp4"></video>
+    </p>
+</div>
+
+<p>Alternativ kann die Zuordnung einer Person zu einer Institution auch in der Detailansicht der Person erfolgen. Wählen Sie dazu im Auswahlmenü “Institution” die gewünschte Institution aus. Beachten Sie jedoch, dass diese Auswahlmenü nur für Personen anezeigt wird, für die die Funktion “Extern” ausgewählt ist.</p>
+
+<h2 id="schlagworte">Schlagworte</h2>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass ein Aufrufen des Menüpunkts "Schlagworte" Administrator-Berechtigungen erfordert.
+</p>
+</div>
+
+<p>In der Schlagwort-Liste werden alle im System erfassten Schlagworte angezeigt. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend alphabetisch sortiert.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der Schlagworte angezeigt, die der aktuellen Volltextsuche entsprechen, wurden keine Suche angewendet, repräsentiert dies also die Gesamtzahl der im System vorhandenen Schlagworte. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Schlagworte auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/tag_list.mp4"></video>
+    </p>
+</div>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.</p>
+
+<p>Schlagworte dienen dazu Personendatensätze besser gruppieren bzw. filtern zu können. Personen können Schlagworte zugeordnet werden um später die Personenliste nach diesen Schlagworten filtern zu können. So lassen sich semantische Verknüpfungen herstellen, die durch die vorhandenen Eingabemasken nicht umsetzbar wären. Ein sinnvolles Anwendungsbeispiel wäre etwa das Schlagwort “Schulleitung”. Durch die Zuordnung dieses Schlagwortes können Personen, die dem Schulleitungsteam angehören, logisch gruppiert werden. Dies wäre ansonsten nicht möglich, da alle Angestellten der Schule unter der Funktion “MitarbeiterInnen” geführt werden. Ein weiteres sinnvolles Beispiel wäre etwa das Schlagwort “VegetarierIn” um vegetarische Personen kennzeichen und beim Mittagessen entsprechend berücksichtigen zu können.</p>
+
+<div class="callout callout--warning">
+<p><strong>Keine unnötigen Schlagworte</strong>
+Achten Sie darauf keine unnötigen Schlagworte zu erstellen und zuzuordnen. Unnötig ist ein Schlagwort besonders dann, wenn damit eine Eigenschaft erfasst wird, für die bereits ein Eingabefeld existiert. So ist es z.B. nicht ratsam ein Schlagwort "Lerngruppe 1" zu erstellen, da eine Lerngruppen-Zuordnung bereits durch ein entsprechendes Eingabefeld abgedeckt ist. Weiterhin sollte bedacht werden, dass Schlagworte dazu dienen, eine Gruppierung zu erreichen. Ein Schlagwort, das lediglich auf eine Person zutrifft, ist daher nicht sinnvoll und eine solche Information sollte eher im Feld "Notizen" abgespeichert werden.
+
+Zeigt sich wiederum, dass bei mehreren Personen ähnliche Einträge im Feld "Notizen" existieren, ist es möglicherweise sinnvoll diese unter einem Schlagwort zusammen zu fassen.
+</p>
+</div>
+
+<h5 id="schlagwort-anlegen">Schlagwort anlegen</h5>
+
+<p>Um eine neues Schlagwort anzulegen, klicken Sie auf den Button “Neues Schlagwort hinzufügen”, der sich mittig über der Tabelle befindet. Geben Sie das gewünschte Schlagwort ein und klicken Sie anschließend auf “Anlegen”. Das neue Schlagwort erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint.</p>
+
+<p><strong>Beachten Sie</strong>, dass das neu angelegte Schlagwort unter Umständen nicht in der Tabelle erscheint, falls sie nicht der von Ihnen vorgegebenen Volltextsuche entspricht.</p>
+
+<h5 id="einsehen-und-bearbeiten-3">Einsehen und Bearbeiten</h5>
+
+<p>Im Gegensatz zu anderen Bereichen des CVS existiert für Schlagworte keine Detailansicht. Um ein Schlagwort zu bearbeiten, können Sie direkt in der jeweiligen Tabellen-Zeile auf den Button “Bearbeiten” klicken. Das entsprechende Schlagwort wird nun in einem Eingabefeld angezeigt und kann dort bearbeitet werden. <strong>Beachten Sie</strong>, dass im Gegensatz zu anderen Bereichen, der Abschluss der Bearbeitung mit einem Klick auf den “Speichern” Button bestätigt werden muss. Sie können die Bearbeitung auch jederzeit durch einen Klick auf den “Abbrechen” Button abbrechen.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/tag_edit.mp4"></video>
+    </p>
+</div>
+
+<p><strong>Beachten Sie</strong>, dass das Schlagwort nach der Bearbeitung automatisch in die vorgegebene alphabetische Ordnung einsortiert wird. Bearbeiten Sie also das Schlagwort “Affe” am Beginn der Tabelle und ändern es zu “Zebra”, rutscht es nach dem Klick auf “Speichern” an das Ende der Tabelle bzw. möglicherweise auch auf eine der nächsten Seiten.</p>
+
+<h5 id="verknüpfen-und-filtern">Verknüpfen und Filtern</h5>
+
+<p>Alle angelegten Schlagwörter, können beliebigen Personen zugeordnet werden und erscheinen im Dropdown-Menü “Schlagworte” bei den Filteroptionen der Personenliste (<a href="/funktionen/#filtern-und-durchsuchen">Personen -&gt; Liste -&gt; Filtern und Durchsuchen</a>). Um einer Person ein Schlagwort zuzuordnen, navigieren Sie zur Detailansicht des jeweiligen Datensatzes und wählen Sie aus dem Dropdown “Schlagworte” das gewünschte Schlagwort aus. Falls Sie nun in der Personenliste das Schlagwort als Filterkriterium auswählen, erscheinen nur Personen, denen dieses Schlagwort zugeordnet wurde. Filtern Sie nach mehreren Schlagworten auf einmal, werden nur Personen angezeigt, denen alle ausgewählten Schlagworte zugeordnet wurden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/tag_link.mp4"></video>
+    </p>
+</div>
+
+<h1 id="klassen--lerngruppen">Klassen &amp; Lerngruppen</h1>
+
+<h2 id="zuordnung">Zuordnung</h2>
+
+<p>Hier werden alle unter Klassen bzw. unter Lerngruppen angelegten Klassen und Lerngruppen als Boxen angezeigt. Klicken Sie auf die Überschrift “Klassen” oder “Lerngruppen” um die entsprechenden Zuordnungen aus- bzw. einzuklappen. Falls für eine bestimmte Klasse oder Lerngruppe bereits eine Zuordnung von SchülerInnen erfolgt ist, werden diese in der jeweiligen Box angezeigt. Alle Personen, denen noch keine Klasse oder Lerngruppe zugeordnet wurde, werden gesammelt in der obersten Box angezeigt.</p>
+
+<div class="callout callout--warning">
+<p><strong>Nur aktive SchülerInnen</strong>
+In dieser Übersicht werden ausschließlich aktive SchülerInnen angezeigt. D.h. Datensätze für die bereits ein Austrittsdatum gesetzt wurde, erscheinen hier nicht.
+</p>
+</div>
+
+<h5 id="zuordnung-bearbeiten">Zuordnung bearbeiten</h5>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass ein Bearbeiten der Zuordnung von SchülerInnen zu Klassen oder Lerngruppen Administrator-Berechtigungen erfordert.
+</p>
+</div>
+
+<p>Falls Sie eine Person einer neuen Lerngruppe oder Klasse zuordnen möchten, können Sie dies bequem per Drag&amp;Drop erledigen. Bewegen Sie dazu die Maus über den Namen der zu verschiebenden Person und Bewegen Sie die Person mit gerückter Maustaste in die neue Klasse oder Lerngruppe. Lassen Sie nun den Mauszeiger los und die Person wird in die neue Klasse oder Lerngruppe verschoben.</p>
+
+<p>Möchten Sie eine Person keiner Lerngruppe oder Klasse mehr zuordnen ziehen Sie den entsprechenden Namen in die oberste Box mit dem Titel “Keiner Klasse/Lerngruppe zugeordnet”.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/classes_links.mp4"></video>
+    </p>
+</div>
+
+<p>Alternativ haben Sie auch die Möglichkeit die Klassen- oder Lerngruppenzugehörigkeit direkt im Personendatensatz zu bearbeiten. Navigieren Sie zu diesem Zweck zur Detailansicht der gewünschten Person und wählen Sie im Dropdown “Klasse” bzw. “Lerngruppe” den gewünschten Eintrag aus.</p>
+
+<h2 id="klassen">Klassen</h2>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass das Aufrufen des Menüpunkts "Klassen" Administrator-Berechtigungen erfordert.
+</p>
+</div>
+
+<p>In der Klassen-Liste werden alle im System erfassten Klassen angezeigt. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend alphabetisch sortiert.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der Klassen angezeigt, die der aktuellen Volltextsuche entsprechen, wurden keine Suche angewendet, repräsentiert dies also die Gesamtzahl der im System vorhandenen Klassen. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Klassen auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/classes_list.mp4"></video>
+    </p>
+</div>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.</p>
+
+<h5 id="klasse-anlegen">Klasse anlegen</h5>
+
+<p>Um eine neue Klasse anzulegen, klicken Sie auf den Button “Neue Klasse hinzufügen”, der sich mittig über der Tabelle befindet. Geben Sie die gewünschte Klassenbezeichnung ein und klicken Sie anschließend auf “Anlegen”. Die neue Klasse erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint.</p>
+
+<p><strong>Beachten Sie</strong>, dass die neu angelegte Klasse unter Umständen nicht in der Tabelle erscheint, falls sie nicht der von Ihnen vorgegebenen Volltextsuche entspricht.</p>
+
+<h5 id="einsehen-und-bearbeiten-4">Einsehen und Bearbeiten</h5>
+
+<p>Im Gegensatz zu anderen Bereichen des CVS existiert für Klassenbezeichnungen keine Detailansicht. Um eine Klassenbezeichnungen zu bearbeiten, können Sie direkt in der jeweiligen Tabellen-Zeile auf den Button “Bearbeiten” klicken. Die entsprechende Bezeichnung wird nun in einem Eingabefeld angezeigt und kann dort bearbeitet werden. <strong>Beachten Sie</strong>, dass im Gegensatz zu anderen Bereichen, der Abschluss der Bearbeitung mit einem Klick auf den “Speichern” Button bestätigt werden muss. Sie können die Bearbeitung auch jederzeit durch einen Klick auf den “Abbrechen” Button abbrechen.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/classes_edit.mp4"></video>
+    </p>
+</div>
+
+<p><strong>Beachten Sie</strong>, dass die Klassenbezeichnung nach der Bearbeitung automatisch in die vorgegebene alphabetische Ordnung einsortiert wird. Bearbeiten Sie also die “Klasse 1” am Beginn der Tabelle und ändern sie zu “Klasse 12”, rutscht diese nach dem Klick auf “Speichern” an das Ende der Tabelle bzw. möglicherweise auch auf eine der nächsten Seiten.</p>
+
+<h2 id="lerngruppen">Lerngruppen</h2>
+
+<p>Die Auflistung, Erstellung und Bearbeitung von Lerngruppen geschieht analog zu der von Klassen, siehe: <a href="/funktionen/#klassen">Klassen &amp; Lerngruppen -&gt; Klassen</a></p>
+
+<h2 id="listen-export">Listen-Export</h2>
+
+<p>Unter diesem Menüpunkt haben Sie die Möglichkeit Personen-Listen nach verschiedenen Kriterien zusammenzustellen und als PDF zu exportieren. Es bleibt Ihnen überlassen, ob Sie Klassen oder Lerngruppen oder auch beides auswählen. In den Export werden alle SchülerInnen eingeschlossen, auf die <strong>mindestens</strong> eines der Kriterien zutrifft. Wählen Sie beispielsweise die Klasse 1 und Lerngruppe 1 aus, werden alle SchülerInnen exportiert, die entweder der Lerngruppe 1, der Klasse 1 oder beiden Elementen zugeordnet sind.</p>
+
+<p>Mit der Auswahl der Option “Erziehungsberechtigte in Export einschließen” werden zu jedem exportieren Schüler und jeder exportieren Schülerin, die zugeordneten Erziehungsberechtigten exportiert. Falls gewünscht kann zusätzlich mit der Option “Mitarbeitende in Export einschließen” eine Liste der im System erfassten MitarbeiterInnen in den Export inkludiert werden.</p>
+
+<div class="callout callout--success">
+    <p><strong>Tipp</strong>
+    Wählen Sie keine Lerngruppe und keine Klasse aus und aktivieren Sie die Option "Mitarbeitende in Export einschließen" um ein MitarbeiterInnen-Verzeichnis zu exportieren.
+    </p>
+</div>
+
+<p>Durch einen Klick auf den Button “PDF-Export” wird eine Liste basierend auf den ausgewählten Optionen generiert und zum Herunterladen präsentiert.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/list_export.mp4"></video>
+    </p>
+</div>
+
+<h1 id="briefe">Briefe</h1>
+
+<h2 id="meine-briefe">Meine Briefe</h2>
+
+<p>In diesem Bereich haben Sie die Möglichkeit Briefe zu erstellen und zu versenden. Der von Ihnen vorgegeben Brieftext wird dabei auf dem Briefpapier der Schule platziert und je nach Wunsch als Anhang per eMail versendet oder für den Druck und Postversand als PDF zum Herunterladen exportiert.</p>
+
+<p>In der Brief-Liste werden alle von Ihnen erstellten Briefe angezeigt. Andere NutzerInnen des Systems können Ihre Briefe also nicht einsehen, genau so wie auch Sie nur auf Ihre eigenen Briefe zugreifen können. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend nach Änderungszeit sortiert.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der Briefe angezeigt, die der aktuellen Volltextsuche entsprechen, wurden keine Suche angewendet, repräsentiert dies also die Gesamtzahl der von Ihnen erstellten Datensätze. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Briefe auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/letter_list.mp4"></video>
+    </p>
+</div>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.</p>
+
+<h5 id="brief-anlegen">Brief anlegen</h5>
+
+<p>Um einen neuen Brief anzulegen, klicken Sie auf den Button “Neuen Brief hinzufügen”, der sich mittig über der Tabelle befindet. Geben Sie einen gewünschten Titel oder Inhalt and und klicken Sie anschließend auf “Anlegen”. Der neue Brief erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint.</p>
+
+<p><strong>Beachten Sie</strong>, dass der neu angelegte Brief unter Umständen nicht in der Tabelle erscheint, falls er nicht der von Ihnen vorgegebenen Volltextsuche entspricht.</p>
+
+<h5 id="einsehen-und-bearbeiten-5">Einsehen und Bearbeiten</h5>
+
+<p>Möchten Sie einen bestimmten Brief betrachten bzw. bearbeiten oder für den Versand vorbereiten, gelangen Sie mit einem Doppelklick auf die entsprechende Zeile der Tabelle in die Detailansicht des Briefes. Hier kann eine Bearbeitung und ein Versand vorgenommen werden.</p>
+
+<p>In der Detailansicht haben Sie die Möglichkeit einen Titel für Ihren Brief festzulegen. Dieser wird über dem Brief in fettgedruckter Schrift als Überschrift platziert. Das ausgewählte Datum stellt das auf dem Brief dargestellte Datum dar. Sie können somit Briefe auf ein beliebiges Datum datieren. Die Angabe eines Titel sowie eines Datums sind <strong>freiwillig</strong>.</p>
+
+<p>Im Feld “Inhalt” haben Sie die Möglichkeit den Text des Briefes zu verfassen. Dieser sollte eine Anrede, die gewünschte Information sowie eine Grußformel enthalten. Sie können den Text wie gewohnt mit Absätzen gliedern.</p>
+
+<h5 id="adressieren">Adressieren</h5>
+
+<p>Im unteren Bereich der Detailansicht finden Sie die Auswahl der AdressatInnen. Hier können Sie die Personen oder Institutionen auswählen, die den aktuell betrachteten Brief erhalten sollen. Zusätzlich können Sie festlegen, ob ein Versand per eMail oder auf dem Postweg durchgeführt werden soll.</p>
+
+<p>Wählen Sie die gewünschten AdressatInnen per Drop-Down Menü aus. Dabei können sowohl einzelne Personen sowie ganze Institutionen im jeweiligen Drop-Down selektiert werden. Wenn Sie eine bestimmte Auswahl an Personen benachrichtigen möchten, haben Sie die Möglichkeit eine Auswahl in der Personenliste des CVS zu treffen und diese automatisch in das AdressatInnen-Feld zu übernehmen. Navigieren Sie hierzu zum Menü-Punkt “Personen -&gt; Liste” und wählen Sie aus der Tabelle die zu benachrichtigenden Personen durch Klicken aus (verwenden Sie einen Filter um die gewünschten Personen schneller zu finden). Wenn alle gewünschten Personen selektiert wurden, navigieren Sie zurück zur Detailansicht des betreffenden Briefes (am einfachsten durch die Benutzung der Tabs). Klicken Sie nun auf die drei Punkte links neben dem “Empfänger/innen” Auswahlfeld. Im sich öffnenden Menü können Sie durch klicken des “Auswahl aus Liste übernehmen” Buttons das Laden der ausgewählten Personen in das Auswahlfeld anstoßen. Analog funktioniert dieses Vorgehen beim Feld “Institutionen”.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/letter_addresses.mp4"></video>
+    </p>
+</div>
+
+<p>Durch einen Klick auf die drei Punkte neben dem Auswahlfeld und dann auf “Alle entfernen” haben Sie jederzeit die Möglichkeit alle ausgewählten Personen oder Institutionen zu entfernen ohne diese einzeln auswählen zu müssen.</p>
+
+<p>Sobald mindestens eine Person oder Institution ausgewählt wurde, erscheinen die jeweiligen Adressen in Boxen unter den Auswahlfeldern. Diese Boxen enthalten zusätzliche Informationen wie etwa die Postanschrift oder eMail Adresse der Elemente. Zusätzlich wird eine Warnung angezeigt, falls ein Datensatz nicht über eine Postanschrift oder eMail Adresse verfügt. Durch einen Klicken auf die drei Punkte neben den entsprechenden Namen können Sie auswählen, ob diese Person per eMail oder auf dem Postweg benachrichtigt werden soll. Außerdem können Sie AdressatInnen durch den Klick auf “Entfernen” aus der Auswahl entfernen. Alternativ können Sie auch im Auswahlfeld auf das kleine “x” neben dem Namen klicken.</p>
+
+<p>Möchten Sie alle ausgewählten AdressatInnen per eMail oder auf dem Postweg benachrichtigen, können Sie den Slider mit den Optionen “alle per eMail benachrichtigen” und “alle per Brief benachrichtigen” nutzen.</p>
+
+<p><strong>Beachten Sie</strong>, dass Personen oder Institutionen, die über eine identische Adresse verfügen automatisch zu einer Box zusammengefasst werden. Dies führt dazu, dass diese Personen den Brief nur einmal erhalten, allerdings mit der Aufführung aller Personen im Adressfeld des Briefes. Möchten Sie den Brief an alle Mitglieder eines Haushalts separat versenden, klicken Sie auf die drei Punkte links neben den aufgeführten Namen in der Adress-Box und wählen Sie den Punkt “Personen separat benachrichtigen” aus. Die Namen werden nun in separaten Boxen dargestellt. Um diesen Schritt rückgängig zu machen klicken Sie wiederum auf die drei Punkte und wählen Sie den Punkt “Personen gemeinsam benachrichtigen” aus.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/letter_addressdetails.mp4"></video>
+    </p>
+</div>
+
+<h5 id="vorschau-und-versand">Vorschau und Versand</h5>
+
+<p>Falls Sie während der Erstellung eines Briefes eine Vorschau der PDF-Datei auf dem Briefbogen der Schule erhalten möchten, klicken Sie auf den Button “Versand vorbereiten” am oberen Rand der Detailansicht und dann auf “Vorschau herunterladen”. Sie erhalten beispielhaft den eingegeben Text in einer PDF-Datei auf dem Briefbogen der Schule, als Adresse wird in der Vorschau jedoch immer “Max Mustermann” angezeigt. Dies ist kein Fehler und gilt nur für die Vorschau.</p>
+
+<p>Wenn die Bearbeitung des Briefes abgeschlossen ist und alle AdressatInnen ausgewählt wurden, klicken Sie wiederum auf “Versand vorbereiten”. Im sich öffnenden Fenster haben Sie erneut die Möglichkeit zu überprüfen welche EmpfängerInnen direkt per eMail benachrichtigt und für welche ein PDF-Export für den Briefversand ausgewählt wurde. Um den Versand der eMail und den Export der Briefe zu starten, klicken Sie auf “Versenden”. Im Hintergrund werden nun für alle ausgewählten eMail AdressatInnen PDFs generiert und an deren eMail Adressen versendet. Zusätzlich generiert das CVS eine PDF-Datei mit allen Briefen für den Postversand und präsentiert diese automatisch zum Herunterladen.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/letter_send.mp4"></video>
+    </p>
+</div>
+
+<p>Nach Abschluss des Versands können Sie das “Versand vorbereiten” Fenster schließen. In den Adressboxen im unteren Bereich der Detailansicht erhalten Sie nun Statusinformationen über den Versandstatus der Briefe. Für erfolgreich exportiere Briefe wird ein grüner Haken neben dem Exportdatum angezeigt. Für eMails gibt es orange (im Versand befindlich), grüne (erfolgreich zugestellt) und rote (konnte nicht zugestellt werden) Haken.</p>
+
+<p><strong>Beachten Sie</strong>, dass bereits benachrichtigte Personen (durch entsprechende Haken in den Adressboxen kenntlich gemacht) für den weiteren Versand nicht berücksichtigt werden. Falls also alle ausgewählten Personen in einem Brief bereits mit einem Haken markiert sind, wird das CVS Sie beim Klicken auf “Versand vorbereiten” darauf aufmerksam machen, dass kein Versand möglich ist. Dies soll verhindern, dass der gleiche Brief mehrfach ein eine Person zugestellt wird.</p>
+
+<p>Haben Sie beim Versand eine oder mehrere Personen in der Auswahl vergessen und möchten diese nachträglich benachrichtigen, können Sie diese einfach zusätzlich über das Dropdown auswählen und den Versand wie beschrieben durchführen. Es werden dann lediglich die neu hinzugefügten Personen beim Versand berücksichtigt.</p>
+
+<p>Möchten Sie eine Person trotzdem erneut benachrichtigen bzw. einen erneuten Export veranlassen, könnten Sie die betreffenden Personen aus der Auswahl entfernen, die Information über den bereits erfolgten Versand wird dadurch gelöscht. Wählen Sie die Personen erneut aus und führen Sie den Versand wie beschrieben durch.</p>
+
+<h5 id="versenden-per-brief">Versenden per Brief</h5>
+
+<p>Haben Sie für AdressatInnen die Option “per Brief benachrichtigen” ausgewählt, wird eine PDF Datei generiert, die alle Briefe an die ausgewählten AdressatInnen enthält. Diese Datei kann direkt gedruckt und für den Postversand in Umschläge gesteckt werden. Die PDF-Datei wird in dem Moment generiert, wenn Sie im Menü “Versand vorbereiten” auf “Absenden” klicken, anschließend wird Sie direkt zum Herunterladen zur Verfügung gestellt.</p>
+
+<h5 id="versenden-per-email">Versenden per eMail</h5>
+
+<p>Haben Sie für AdressatInnen die Option “per eMail benachrichtigen” ausgewählt, wird eine PDF Datei generiert und diese als Anhang an die Empfänger eMail-Adresse(n) gesendet. Als Absender wird Ihre eigene eMail-Adresse angezeigt. Dies bedeutet, dass wenn EmpfängerInnen auf das Schreiben antworten, Sie diese Antwort in Ihr christophor-eMail-Postfach erhalten. Zusätzlich erhalten Sie eine eMail des CVS, die den Versand der eMails bestätigt und aufführt, welche Personen benachrichtigt wurden. Außerdem finden Sie im Anhang dieser eMail beispielhaft die PDF Datei an einen der EmpfängerInnen.</p>
+
+<p>Die versendete eMail erhält als Betreff den von Ihnen angegebenen Titel des Briefes. Falls Sie keinen Titel angegeben haben, wird ein generischer Betreff (Nachricht von der Christohorus-Schule Basel) verwendet. Der Inhalt der eMail gestaltet sich wie folgt, falls Maria Schmidt eine Nachricht an Rolf Weiss versendet hat:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sehr geehrter Herr Rolf Weiss
+
+anbei erhalten Sie eine Nachricht von Maria Schmidt von der Christophorus-Schule Basel.
+
+
+Mit freundlichen Grüßen
+
+Christophorus-Schule Basel
+</code></pre></div></div>
+
+<p>Im Anhang der eMail befindet sich die PDF mit Ihrem Text auf dem Briefbogen der Schule.</p>
+
+<h2 id="etiketten">Etiketten</h2>
+
+<h5 id="adressieren-1">Adressieren</h5>
+
+<p>In diesem Bereich haben Sie die Möglichkeiten Etiketten für den Versand zu exportieren. Sie können die Personen oder Institutionen auswählen, die in den Export der Etiketten eingeschlossen werden sollen.</p>
+
+<p>Wählen Sie die gewünschten AdressatInnen per Drop-Down Menü aus. Dabei können sowohl einzelne Personen sowie ganze Institutionen im jeweiligen Drop-Down selektiert werden. Wenn Sie eine bestimmte Auswahl an Personen benachrichtigen möchten, haben Sie die Möglichkeit eine Auswahl in der Personenliste des CVS zu treffen und diese automatisch in das AdressatInnen-Feld zu übernehmen. Navigieren Sie hierzu zum Menü-Punkt “Personen -&gt; Liste” und wählen Sie aus der Tabelle die zu benachrichtigenden Personen durch Klicken aus (verwenden Sie einen Filter um die gewünschten Personen schneller zu finden). Wenn alle gewünschten Personen selektiert wurden, navigieren Sie zurück zum Menüpunkt “Etiketten” (am einfachsten durch die Benutzung der Tabs). Klicken Sie nun auf die drei Punkte links neben dem “Empfänger/innen” Auswahlfeld. Im sich öffnenden Menü können Sie durch klicken des “Auswahl aus Liste übernehmen” Buttons das Laden der ausgewählten Personen in das Auswahlfeld anstoßen. Analog funktioniert dieses Vorgehen beim Feld “Institutionen”.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/label_addresses.mp4"></video>
+    </p>
+</div>
+
+<p>Durch einen Klick auf die drei Punkte neben dem Auswahlfeld und dann auf “Alle entfernen” haben Sie jederzeit die Möglichkeit alle ausgewählten Personen oder Institutionen zu entfernen ohne diese einzeln auswählen zu müssen.</p>
+
+<p>Sobald mindestens eine Person oder Institution ausgewählt wurde, erscheinen die jeweiligen Adressen in Boxen unter den Auswahlfeldern. Diese Boxen enthalten zusätzliche die Postanschrift der Personen. Zusätzlich wird eine Warnung angezeigt, falls ein Datensatz nicht über eine Postanschrift verfügt. Durch einen Klicken auf die drei Punkte neben den entsprechenden Namen können Sie sie durch den Klick auf “Entfernen” aus der Auswahl entfernen. Alternativ können Sie auch im Auswahlfeld auf das kleine “x” neben dem Namen klicken.</p>
+
+<p><strong>Beachten Sie</strong>, dass Personen oder Institutionen, die über eine identische Adresse verfügen automatisch zu einer Box zusammengefasst werden. Dies führt dazu, dass all diese Personen oder Institutionen in einem Etikett zusammengefasst werden. Wünschen Sie einzelne Etiketten, klicken Sie auf die drei Punkte links neben den aufgeführten Namen in der Adress-Box und wählen Sie den Punkt “Personen separat benachrichtigen” aus. Die Namen werden nun in separaten Boxen dargestellt. Um diesen Schritt rückgängig zu machen klicken Sie wiederum auf die drei Punkte und wählen Sie den Punkt “Personen gemeinsam benachrichtigen” aus.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/label_addressdetails.mp4"></video>
+    </p>
+</div>
+
+<h5 id="exportieren-1">Exportieren</h5>
+
+<p>Wenn Sie die gewünschten Adressen für den Export ausgewählt haben, klicken Sie auf den Button “Etiketten exportieren” im oberen Bereich der Seite. Bestätigen Sie die angezeigten Einstellungen durch Klicken auf “PDF exportieren”. Ein Etiketten-Bogen mit den wählten Adressen wird im PDF-Format generiert und zum Herunterladen angeboten.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/label_config.mp4"></video>
+    </p>
+</div>
+
+<p>Im “Etiketten exportieren” Dialog haben Sie die Möglichkeit weitere Einstellungen für den Export vorzunehmen. So können Sie beispielsweise Etiketten am Anfang des Bogens überspringen. Dies ist dann sinnvoll, wenn Sie einen Bogen bedrucken möchten, auf dem bereits Etiketten abgedruckt sind, aber am Ende noch freie Etiketten existieren. Sind auf dem Bogen etwa zwei Etiketten am Anfang bedruckt worden, wählen Sie die Option “Starten bei Etikett: 3”.</p>
+
+<p>Durch Klicken auf “Abstände konfigurieren” haben Sie die Möglichkeit den Etiketten-Export an Ihre persönlichen Etiketten-Vorlagen anzupassen. Anhand der dargestellten Grafik und der Zuordnung von Buchstaben (a bis f) können Sie auf einen Blick erkennen mit welchem Schieberegler Sie welchen Abstand konfigurieren können. Möchten Sie die getroffenen Einstellungen für spätere Exporte speichern, können Sie einen Titel für Ihre Konfiguration eingeben und diese mit einem Klick auf “Vorlage speichern” sichern. Im oberen Bereich der Konfiguration können Sie aus einem Dropdown die gespeicherten Vorlagen laden.</p>
+
+:ET

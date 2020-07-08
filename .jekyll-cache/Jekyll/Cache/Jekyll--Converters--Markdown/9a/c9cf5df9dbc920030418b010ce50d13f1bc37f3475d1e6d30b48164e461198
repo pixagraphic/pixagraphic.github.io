@@ -1,0 +1,54 @@
+I"U<h1 id="liste">Liste</h1>
+
+<p>In der Liste werden alle im System erfassten NutzerInnen angezeigt. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend alphabetisch nach Nachnamen der verknüpften Person sortiert.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der Personen angezeigt, die den aktuellen Filterkriterien entsprechen, wurden keine Filter angewendet, repräsentiert dies also die Gesamtzahl der im System vorhandenen Personen. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Personen auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/people_list.mp4"></video>
+
+    Funktionsumfang der Personen-Liste
+    </p>
+</div>
+
+<h2 id="benutzerin-anlegen">BenutzerIn anlegen</h2>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass das Anlegen von Personen-Datensätzen Administrator-Berechtigungen erfordert.
+</p>
+</div>
+
+<p>Um einen neuen Personen-Datensatz anzulegen, klicken Sie auf den Button “Neue Person hinzufügen”, der sich mittig über der Tabelle befindet. Geben Sie einen Vor- und einen Nachnamen ein und klicken Sie anschließend auf “Anlegen”. Die neue Person erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint. Um weitere Daten eingeben zu können, suchen Sie die gerade angelegte Person in der Tabelle und navigieren Sie durch einen Doppelklick auf die Zeile zur Detailansicht der Person.</p>
+
+<p><strong>Beachten Sie</strong>, dass die neu angelegte Person unter Umständen nicht in der Tabelle erscheint, falls sie nicht den von Ihnen vorgegebenen  Filterkriterien entspricht.</p>
+
+<h2 id="bearbeiten-und-einsehen">Bearbeiten und Einsehen</h2>
+
+<p>Möchten Sie einen bestimmten Datensatz betrachten bzw. bearbeiten, gelangen Sie mit einem Doppelklick auf die entsprechende Zeile der Tabelle in die Detailansicht der Person. Hier können alle erfassten Daten betrachtet und bearbeitet werden.</p>
+
+<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass das Bearbeiten von Personen-Datensätzen Administrator-Berechtigungen erfordert. Ein Betrachten der Daten und das Anlegen neuer Förderdokumentationen ist hingegen allen NutzerInnen möglich.
+</p>
+</div>
+
+<p>Je nach ausgewählter Funktion der betrachteten Person, unterscheiden sich die angezeigten Daten. So dass beispielsweise für SchülerInnen ein Bürgerort oder eine zuweisende Stelle angegeben werden kann wohingegen für MitarbeiterInnen die Möglichkeit der Angaben eines Berufes existiert.</p>
+
+<p>Handelt es sich um einen SchülerInnen-Datensatz finden Sie am Ende der Detailansicht eine Übersicht der erfassten Förderdokumentationen und Zeugnissen nach Schuljahr. Durch Klicken auf ein Jahr gelangen Sie direkt zum entsprechenden Datensatz. Durch Klicken auf “Neue Förderdokumentation hinzufügen” haben Sie außerdem die Möglichkeit eine neue Dokumentation anzulegen. Es bleibt Ihnen überlassen, ob Sie auf Förderdokumentationen zugreifen bzw. diese Anlegen indem Sie auf die Detailansicht einer Person zugreifen oder ob Sie dafür direkt den Menüpunkt <a href="/funktionen/#förderdokumentationen">Personen -&gt; Förderdokumentationen</a> nutzen. Bei beiden Möglichkeiten handelt es sich um die selbe Datenbasis. Das Gleiche gilt für die Erstellung neuer Zeugnisse.</p>
+
+<p>Um die Eingabe von Adressen zu erleichtern, existiert eine <strong>Adressübernahme</strong> Funktion. Ein Personendatensatz kann mit anderen Personen verknüpft werden, beispielsweise durch die Auswahl von “Erziehungsberechtigten” im Datensatz eines Kindes oder der Auswahl von Kindern in einem Datensatz eines Erziehungsberechtigten. Wurde eine solche Verknüpfung erstellt, lässt sich durch Klicken auf das Verknüpfungsicon unter der Überschrift “Anschrift” die Adressübernahme starten. Im dadurch geöffneten Fenster werden alle Adressen von verknüpften Personen angezeigt. Mit einem Klick auf “übernehmen” wird die Adresse des gewünschten Datensatzes in den aktuellen Datensatz übernommen. Voraussetzung dafür ist natürlich, dass im verknüpften Datensatz bereits eine Adresse hinterlegt wurde.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/address_sync.mp4"></video>
+    </p>
+</div>
+
+<h2 id="sortieren">Sortieren</h2>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.</p>
+
+<p>Zu beachten ist, dass sich die Ordnung der Adress-Spalte an der Postleitzahl orientiert.</p>
+:ET

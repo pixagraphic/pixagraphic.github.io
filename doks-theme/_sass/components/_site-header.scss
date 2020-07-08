@@ -6,8 +6,8 @@
 .site-header {
 	position: absolute;
 	width: 100%;
-	height: 5.625rem;
-	border-bottom: 1px solid rgba($color-dark-blue, .15);
+	height: 6.625rem;
+	border-bottom: 1px solid #555555;
 }
 
 /* ----- Navigation ----- */
@@ -15,7 +15,7 @@
 	@include link-reset;
 	display: block;
 	float: left;
-	color: $color-dark-blue;
+	color: #bccf02;
 	font-family: $font-family-secondary;
 	font-weight: bold;
 	font-size: 2em;
@@ -24,7 +24,7 @@
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color-dark-blue;
+		color: #ffffff;
 	}
 
 	img {
@@ -51,16 +51,16 @@
 		font-size: .875em;
 		font-weight: 500;
 		font-family: $font-family-secondary;
-		line-height: calc(5.625rem - 1px);
+		line-height: calc(6.625rem - 1px);
 		text-transform: uppercase;
 		border-bottom: 1px solid;
 		border-color: transparent;
 		transition: border-color .2s;
-
+		color:#ffffff;
 		&:hover,
 		&:focus,
 		&:active {
-			border-color: $color-dark-blue;
+			border-color: #bccf02;
 		}
 	}
 }
@@ -94,6 +94,7 @@
 	overflow: scroll;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
+	font-size:2em;
 	-webkit-overflow-scrolling: touch;
 
 	li {
@@ -104,13 +105,13 @@
 		}
 
 		+ li {
-			margin-top: 1.25rem;
+			margin-top: 3.25rem;
 		}
 	}
 
 	a {
 		@include link-reset;
-		color: $color-dark-blue;
+		color: #222222;
 		font-family: $font-family-secondary;
 		text-transform: uppercase;
 	}
@@ -131,7 +132,7 @@
 		display: block;
 		height: 2px;
 		width: 1.875rem;
-		background-color: $color-dark-blue;
+		background-color: #ffffff;
 		position: absolute;
 		left: 1.875rem;
 		transition: top .2s, transform .2s, opacity .2s;
@@ -151,6 +152,7 @@
 
 	.offcanvas-expanded & {
 		span {
+			background-color: #222222;
 			&:first-child,
 			&:last-child {
 				top: 2.6875rem;

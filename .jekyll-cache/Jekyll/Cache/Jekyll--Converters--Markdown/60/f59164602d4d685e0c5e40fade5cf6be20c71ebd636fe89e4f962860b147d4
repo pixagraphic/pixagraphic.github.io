@@ -1,0 +1,30 @@
+I"[<h1 id="liste">Liste</h1>
+
+<p>In diesem Bereich haben Sie die Möglichkeit Briefe zu erstellen und zu versenden. Der von Ihnen vorgegeben Brieftext wird dabei auf dem Briefpapier der Schule platziert und je nach Wunsch als Anhang per eMail versendet oder für den Druck und Postversand als PDF zum Herunterladen exportiert.</p>
+
+<p>In der Brief-Liste werden alle von Ihnen erstellten Briefe angezeigt. Andere NutzerInnen des Systems können Ihre Briefe also nicht einsehen, genau so wie auch Sie nur auf Ihre eigenen Briefe zugreifen können. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend nach Änderungszeit sortiert.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der Briefe angezeigt, die der aktuellen Volltextsuche entsprechen, wurden keine Suche angewendet, repräsentiert dies also die Gesamtzahl der von Ihnen erstellten Datensätze. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Briefe auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/letter_list.mp4"></video>
+    </p>
+</div>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.</p>
+
+<h2 id="brief-anlegen">Brief anlegen</h2>
+
+<p>Um einen neuen Brief anzulegen, klicken Sie auf den Button “Neuen Brief hinzufügen”, der sich mittig über der Tabelle befindet. Geben Sie einen gewünschten Titel oder Inhalt and und klicken Sie anschließend auf “Anlegen”. Der neue Brief erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint.</p>
+
+<p><strong>Beachten Sie</strong>, dass der neu angelegte Brief unter Umständen nicht in der Tabelle erscheint, falls er nicht der von Ihnen vorgegebenen Volltextsuche entspricht.</p>
+
+<h2 id="einsehen-und-bearbeiten">Einsehen und Bearbeiten</h2>
+
+<p>Möchten Sie einen bestimmten Brief betrachten bzw. bearbeiten oder für den Versand vorbereiten, gelangen Sie mit einem Doppelklick auf die entsprechende Zeile der Tabelle in die Detailansicht des Briefes. Hier kann eine Bearbeitung und ein Versand vorgenommen werden.</p>
+
+<p>In der Detailansicht haben Sie die Möglichkeit einen Titel für Ihren Brief festzulegen. Dieser wird über dem Brief in fettgedruckter Schrift als Überschrift platziert. Das ausgewählte Datum stellt das auf dem Brief dargestellte Datum dar. Sie können somit Briefe auf ein beliebiges Datum datieren. Die Angabe eines Titel sowie eines Datums sind <strong>freiwillig</strong>.</p>
+
+<p>Im Feld “Inhalt” haben Sie die Möglichkeit den Text des Briefes zu verfassen. Dieser sollte eine Anrede, die gewünschte Information sowie eine Grußformel enthalten. Sie können den Text wie gewohnt mit Absätzen gliedern.</p>
+:ET

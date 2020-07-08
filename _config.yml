@@ -1,37 +1,26 @@
 # Theme settings
 doks:
     baseurl:
-    color_theme: # Available themes: blue (default), green, purple, red and yellow
+    color_theme: green # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
-            text: Project name
-            image:
+            text:
+            image: true
         nav:
-            - item_name: Item 1
-              item_url: '#'
-            - item_name: Item 2
-              item_url: '#'
-            - item_name: Item 3
-              item_url: '#'
+            - item_name: Allgemeines
+              item_url: '/allgemeines'
+            - item_name: Inhalt
+              item_url: '/inhalt'
+            - item_name: Funktionen
+              item_url: '/funktionen'
+            - item_name: Kontakt
+              item_url: '/kontakt'
     footer:
         content:
             logo:
-                text: Project name
+                text: CVS - Softwaredokumentation
                 image:
-            copyright: Copyright &copy; 2017. - Project name <br>All rights reserved.
-        social_list:
-            - network_name: facebook
-              profile_url: '#'
-            - network_name: twitter
-              profile_url: '#'
-            - network_name: instagram
-              profile_url: '#'
-            - network_name: youtube
-              profile_url: '#'
-    google_analytics:
-        tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
-    comments:
-        disqus_forum_shortname: # Add your disqus forum shortname to activate comments
+            copyright: Copyright &copy; 2020. - CVS Raphael Sütterlin <br>All rights reserved.
 
 # SASS settings
 sass:

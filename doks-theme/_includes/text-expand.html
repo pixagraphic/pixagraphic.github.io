@@ -1,0 +1,19 @@
+<script>
+  function toggleDocs(event) {
+
+  if (event.target && event.target.className == 'video-collapse') {
+
+      var next = event.target.nextElementSibling;
+
+
+      if (next.style.display == "none") {
+          next.src = next.attributes.lazyvideo.nodeValue
+          next.style.display = "block";
+      } else {
+          next.style.display = "none";
+      }
+    }
+  }
+
+  document.addEventListener('click', toggleDocs, true);
+</script>

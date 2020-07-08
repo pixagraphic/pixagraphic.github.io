@@ -1,0 +1,40 @@
+I"|<div class="callout callout--warning">
+<p><strong>Administrator-Berechtigungen erforderlich</strong>
+Bitte beachten Sie, dass das Aufrufen des Menüpunkts "BenutzerInnen" Administrator-Berechtigungen erfordert.
+</p>
+</div>
+
+<h1 id="liste">Liste</h1>
+
+<p>In der Liste werden alle im System erfassten NutzerInnen angezeigt. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend alphabetisch nach Nachnamen der verknüpften Person sortiert.</p>
+
+<p>Unter der Tabelle wird die Gesamtzahl der NutzerInnen angezeigt, die den aktuellen Filterkriterien entsprechen, wurden keine Filter angewendet, repräsentiert dies also die Gesamtzahl der im System vorhandenen Datensätze. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten BenutzerInnen auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/user_list.mp4"></video>
+    </p>
+</div>
+
+<h2 id="benutzerin-anlegen">BenutzerIn anlegen</h2>
+
+<p>Um einen neuen BenutzerInnen-Datensatz anzulegen, klicken Sie auf den Button “BenutzerIn hinzufügen”, der sich mittig über der Tabelle befindet. Wählen Sie aus, welche Berechtigungen der neu angelegten Nutzerin oder dem Nutzer zugewiesen werden sollen. Sie haben die Wahl zwischen “Lehrer/in” und “Administrator/in”. Geben Sie eine eMail Adresse ein, diese fungiert als Benutzername und wird während des Logins benötigt. Abschließen müssen Sie ein Passwort festlegen und dies zur Sicherheit wiederholen. Beachten Sie, dass die Software keine Passwörter unter <strong>16 Zeichen</strong> akzeptiert. Klicken Sie abschließend auf “Anlegen”. Der neue Datensatz erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass er nicht direkt auf der ersten Seite erscheint. Um weitere Daten eingeben zu können, suchen Sie die gerade angelegte Benutzerin oder den Benutzer in der Tabelle und navigieren Sie durch einen Doppelklick auf die Zeile zur Detailansicht des Datensatzes.</p>
+
+<p><strong>Beachten Sie</strong>, dass neu angelegte BenutzerInnen unter Umständen nicht in der Tabelle erscheinen, falls sie nicht den von Ihnen vorgegebenen Filterkriterien entsprechen.</p>
+
+<h2 id="bearbeiten-und-einsehen">Bearbeiten und Einsehen</h2>
+
+<p>Möchten Sie einen bestimmten Datensatz betrachten bzw. bearbeiten, gelangen Sie mit einem Doppelklick auf die entsprechende Zeile der Tabelle in die Detailansicht. Hier kann ein neues Passwort festgelegt oder eine Verknüpfung mit einem Personen-Datensatz erstellt oder verändert werden. Zusätzlich besteht die Möglichkeit Administrator-Berechtigungen zu gewähren oder zu entziehen.</p>
+
+<p>Um ein neues Passwort zu vergeben, klicken Sie auf den Button “Passwort ändern”. Geben Sie im sich öffnenden Fenster zwei mal das neue Passwort ein und klicken Sie anschließend auf “Absenden”. Das neue Passwort ist dann sofort gültig und dann für den Login benutzt werden.</p>
+
+<div class="callout callout--info">
+    <p><strong class="video-collapse" style="cursor:pointer;">+ Video ansehen</strong>
+    <video style="display:none;max-width:580px;" controls="controls" lazyvideo="/videos/address_sync.mp4"></video>
+    </p>
+</div>
+
+<h2 id="sortieren">Sortieren</h2>
+
+<p>Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.</p>
+:ET

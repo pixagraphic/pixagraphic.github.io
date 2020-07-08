@@ -6,7 +6,7 @@ comments: false
 
 # Hero section
 title: Funktionen
-description: In diesem Abschnitt finden Sie eine vollständige Übersicht der Funktionen, die das CVS bietet. Die Gliederung der Dokumentation richtet sich dabei nach der Menü-Struktur der Software.
+description: In diesem Abschnitt finden Sie eine vollständige Übersicht der Funktionen, die das CVS bietet. Die Gliederung der Dokumentation richtet sich dabei nach der Menü-Struktur der Software. Navigieren Sie mit den Buttons durch die verschiedenen Bereiche der Dokumentation:
 
 # Micro navigation
 micro_nav: true

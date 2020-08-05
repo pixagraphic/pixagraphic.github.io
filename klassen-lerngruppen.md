@@ -98,7 +98,7 @@ Die Auflistung, Erstellung und Bearbeitung von Lerngruppen geschieht analog zu d
 
 Unter diesem Menüpunkt haben Sie die Möglichkeit Personen-Listen nach verschiedenen Kriterien zusammenzustellen und als PDF zu exportieren. Es bleibt Ihnen überlassen, ob Sie Klassen oder Lerngruppen oder auch beides auswählen. In den Export werden alle SchülerInnen eingeschlossen, auf die <strong>mindestens</strong> eines der Kriterien zutrifft. Wählen Sie beispielsweise die Klasse 1 und Lerngruppe 1 aus, werden alle SchülerInnen exportiert, die entweder der Lerngruppe 1, der Klasse 1 oder beiden Elementen zugeordnet sind.
 
-Mit der Auswahl der Option "Erziehungsberechtigte in Export einschließen" werden zu jedem exportieren Schüler und jeder exportieren Schülerin, die zugeordneten Erziehungsberechtigten exportiert. Falls gewünscht kann zusätzlich mit der Option "Mitarbeitende in Export einschließen" eine Liste der im System erfassten MitarbeiterInnen in den Export inkludiert werden.
+Mit der Auswahl der Option "Erziehungsberechtigte in Export einschließen" werden zu jedem exportieren Schüler und jeder exportieren Schülerin, die zugeordneten Erziehungsberechtigten exportiert. Falls gewünscht kann zusätzlich mit der Option "Mitarbeitende in Export einschließen" eine Liste der im System erfassten MitarbeiterInnen in den Export inkludiert werden. Beachten Sie, dass lediglich "aktive" MitarbeiterInnen in den Export eingeschlossen werden. Das bedeutet, dass Datensätze, für die bereits ein Austrittsdatum gesetzt wurde, nicht in der exportierten Liste erscheinen.
 
 <div class="callout callout--success">
     <p><strong>Tipp</strong>

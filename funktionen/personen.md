@@ -220,7 +220,6 @@ Das Sekundarstufenzeugnis besteht hauptsächlich aus Single-Choice Auswahlfelder
 
 Da standardmäßig alle Bewertungsbereiche eingeklappt sind, kann es schwierig werden, einen Überblick zu erhalten, welche Bereiche bereits bearbeitet wurden. Aus diesem Grund wird durch einen grauen Haken vor der Überschrift verdeutlicht, dass in diesem Bereich bereits Bewertungen vorgenommen wurden. Der Haken erscheint, sobald eine Bewertung vorgenommen wurde, er ist also kein Beleg darüber, dass für einen Bereich bereits <strong>alle</strong> Bewertungen vorgenommen wurden.
 
-
 ##### Finalisieren und Exportieren
 
 Während Sie die Bearbeitung eines Zeugnisses vornehmen, können Sie sich jederzeit die Vorschau der finalen PDF anzeigen lassen. Klicken Sie dazu in der Detailansicht am oberen Bildrand auf den Button "Zeugnis finalisieren" und dann auf den Button "Vorschau herunterladen". Anschließend wird eine PDF auf Grundlage der aktuell erfassten Daten generiert und zum Herunterladen bereitgestellt. Beachten Sie, dass jede Seite dieser PDF-Datei mit einem Hinweis versehen ist, dass es sich lediglich um eine Vorschau handelt.

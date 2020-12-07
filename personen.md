@@ -166,9 +166,9 @@ Verschiedene Elemente wie etwa Lernstandserfassungen oder Förderplanungen könn
 
 ## Finalisieren und Exportieren
 
-Während Sie die Bearbeitung einer Förderdokumentation vornehmen, können Sie sich jederzeit die Vorschau der finalen PDF anzeigen lassen. Klicken Sie dazu in der Detailansicht am oberen Bildrand auf den Button "Förderdokumentation finalisieren" und dann auf den Button "Vorschau herunterladen". Anschließend wird eine PDF auf Grundlage der aktuell erfassten Daten generiert und zum Herunterladen bereitgestellt. Beachten Sie, dass jede Seite dieser PDF-Datei mit einem Hinweis versehen ist, dass es sich lediglich um eine Vorschau handelt.
+Während Sie die Bearbeitung einer Förderdokumentation vornehmen, können Sie sich jederzeit die Vorschau der finalen PDF anzeigen lassen. Klicken Sie dazu in der Detailansicht am oberen Bildrand auf den Button "Förderdokumentation finalisieren" und dann auf den Button "Vorschau herunterladen". Anschließend wird eine PDF auf Grundlage der aktuell erfassten Daten generiert und zum Herunterladen bereitgestellt.
 
-Wenn die Bearbeitung abgeschlossen ist und die Förderdokumentation final für den Druck exportiert werden soll, klicken Sie auf den Button "Förderdokumentation finalisieren" und dann auf "Finalisieren". Durch Bestätigen der sich öffnenden Hinweisbox, wird die Bearbeitung des Datensatzes gesperrt und die finale PDF-Version zum Herunterladen präsentiert. Diese PDF verfügt nun nicht mehr über den "Vorschau"-Hinweis auf jeder Seite.
+Wenn die Bearbeitung abgeschlossen ist und die Förderdokumentation final für den Druck exportiert werden soll, klicken Sie auf den Button "Förderdokumentation finalisieren" und dann auf "Finalisieren". Durch Bestätigen der sich öffnenden Hinweisbox, wird die Bearbeitung des Datensatzes gesperrt und die finale PDF-Version zum Herunterladen präsentiert.
 
 
 <div class="callout callout--info">

@@ -134,6 +134,9 @@ Unter der Tabelle wird die Gesamtzahl der Dokumentationen angezeigt, die der akt
 
 Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.
 
+## Persönliche Übersicht exportieren
+Klicken Sie in der Listenansicht der Förderdokumentationen auf "Persönliche Übersicht generieren" und wählen Sie im Anschluss die gewünschte Lerngruppe aus. Durch einen Klick auf "PDF Exportieren" wird Ihnen eine personalisierte Übersicht aller Förderdokumentationen des laufenden Schuljahres mit der ausgewählten Lerngruppe erstellt und zum Download angeboten. Beachten Sie, dass nur Förderdokumentationen gelistet werden, für die Sie als verantwortliche Lehrperson geführt werden. 
+
 ## Förderdokumentation anlegen
 
 Um eine neue Förderdokumentation anzulegen, klicken Sie auf den Button "Neue Förderdokumentation hinzufügen", der sich mittig über der Tabelle befindet. Wählen Sie eine Person und den Zeitraum, den die Dokumentation erfassen soll aus und klicken Sie anschließend auf "Anlegen". Der neue Datensatz erscheint nun gemäß der eingestellten Sortierung in der Tabelle. So kann es vorkommen, dass der neue Datensatz nicht direkt auf der ersten Seite erscheint. Um weitere Daten eingeben zu können, suchen Sie die gerade angelegte Förderdokumentation in der Tabelle und navigieren Sie durch einen Doppelklick auf die Zeile zur Detailansicht.

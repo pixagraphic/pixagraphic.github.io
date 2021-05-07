@@ -135,7 +135,7 @@ Unter der Tabelle wird die Gesamtzahl der Dokumentationen angezeigt, die der akt
 Die Tabelle lässt sich nach unterschiedlichen Kriterien sortieren. Sie erkennen die Tabellen-Spalten nach denen sortiert werden kann an den beiden Pfeilen hinter der Spalten-Überschrift. Klicken Sie auf die gewünschte Spalten-Überschrift um eine aufsteigende Sortierung zu erreichen. Ein erneutes Klicken führt zu einer absteigenden Sortierung. Der dritte Klick deaktiviert die Sortierung und ein erneutes Klicken führt wiederum zu einer aufsteigenden Ordnung.
 
 ## Persönliche Übersicht exportieren
-Klicken Sie in der Listenansicht der Förderdokumentationen auf "Persönliche Übersicht generieren" und wählen Sie im Anschluss die gewünschte Lerngruppe aus. Durch einen Klick auf "PDF Exportieren" wird Ihnen eine personalisierte Übersicht aller Förderdokumentationen des laufenden Schuljahres mit der ausgewählten Lerngruppe erstellt und zum Download angeboten. Beachten Sie, dass nur Förderdokumentationen gelistet werden, für die Sie als verantwortliche Lehrperson geführt werden. 
+Klicken Sie in der Listenansicht der Förderdokumentationen auf "Persönliche Übersicht generieren" und wählen Sie im Anschluss die gewünschte Lerngruppe aus. Durch einen Klick auf "PDF Exportieren" wird Ihnen eine personalisierte Übersicht aller Förderdokumentationen des laufenden Schuljahres mit der ausgewählten Lerngruppe erstellt und zum Download angeboten. Beachten Sie, dass nur Förderdokumentationen gelistet werden, für die Sie als verantwortliche Lehrperson geführt werden.
 
 ## Förderdokumentation anlegen
 
@@ -194,7 +194,7 @@ Wenn die Bearbeitung abgeschlossen ist und die Förderdokumentation final für d
 
 In der Liste werden alle im System erfassten Zeugnisse angezeigt. Standardmäßig werden zehn Datensätze pro Seite angezeigt und die Liste ist absteigend nach der letzten Bearbeitung sortiert.
 
-Grundsätzlich wird zwischen den Zeugnistypen <strong>Primarstufe (Klassen 1-6)</strong> und <strong>Sekundarstufe (Klassen 7-10)</strong> unterschieden. Primarstufenzeugnisse bestehen ausschließliche aus Freitext-Eingabefeldern wohingegen Sekundarstufenzeugnisse vorrangig aus Single-Choice Auswahlfeldern bestehen, die bei Bedarf durch Freitexteingaben ergänzt werden können.
+Grundsätzlich wird zwischen den Zeugnistypen <strong>Primarstufe (Klassen 1-6)</strong> und <strong>Sekundarstufe (Klassen 7-10)</strong> unterschieden.
 
 Unter der Tabelle wird die Gesamtzahl der Zeugnisse angezeigt, die der aktuellen Volltextsuche entsprechen, wurden keine Suche angewendet, repräsentiert dies also die Gesamtzahl der im System vorhandenen Datensätze. Rechts daneben kann entweder durch die Seiten navigiert oder die Anzahl der pro Seite angezeigten Datensätze auf <strong>10</strong>, <strong>25</strong> oder <strong>50</strong> angepasst werden.
 
@@ -237,7 +237,11 @@ Es werden jeweils alle möglichen Bewertungsdimensionen angezeigt. Falls einzeln
 
 <strong>Primarstufenzeugnisse</strong>
 
-Das Primarstufenzeugnis besteht ausschließlich aus Freitextfeldern. Darin können beliebige Text und auch Absätze erfasst werden, die Handhabung entspricht der eines Texteditors. Weitere Formatierungen wie etwa Fettdruck oder Schriftgröße können nicht vorgenommen werden. Dies dient dazu am Ende ein möglichst einheitliches Bild der Zeugnisse beim Export erreichen zu können.
+Das Primarstufenzeugnis besteht hauptsächlich aus Single-Choice Auswahlfeldern. An verschiedenen Stellen kann jedoch auch Freitext, wie z.B. Bemerkungen oder jährlich wechselnde Projekte und Themen eingegeben werden. Weitere Formatierungen wie etwa Fettdruck oder Schriftgröße können nicht vorgenommen werden. Dies dient dazu am Ende ein möglichst einheitliches Bild der Zeugnisse beim Export erreichen zu können. Damit die Erfassung der Daten möglichst übersichtlicht bleibt werden pro Unterkategorie maximal 10 Bewertungsdimensionen angezeigt. Besitzt eine Kategorie mehr Dimensionen werden diese in zwei Bereiche aufgeteilt (z.B. Selbst- und Sozialkompetenz I und Selbst- und Sozialkompetenz II). Auf dem Zeugnisausdruck wird diese Unterscheidung nicht mehr zu sehen sein, sie dient lediglich der übersichtlichen Eingabe.
+
+<div class="callout callout--warning">
+<p><strong>Bemerkungen eingeben</strong> Bitte beachten Sie, dass Bemerkungen zu einer Kategorie immer im letzten Unterpunkt eingegeben werden. Bei Selbst- und Sozialkompetenz I und Selbst- und Sozialkompetenz II zum Beispiel befindet sich das Bemerkungs-Textfeld immer unter dem Reiter Selbst- und Sozialkompetenz II.</p>
+</div>
 
 <strong>Sekundarstufenzeugnisse</strong>
 
